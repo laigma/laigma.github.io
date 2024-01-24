@@ -1,14 +1,22 @@
 {
-  "name": "laigma.github.io",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "laigma-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio personal de Laigma",
+  "license": "ISC",
+  "author": {
+    "name": "laigma",
+    "url": "https://laigma.github.io/"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1"
   },
   "devDependencies": {
-    "vite": "^5.0.8"
+    "vitepress": "^1.0.0-rc.39",
+    "vue": "^3.4.14"
   }
 }
