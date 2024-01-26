@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "laigma",
   description: "Luis Iglesias - Software Engineer",
+  appearance: "dark",
 
   head: [
     ['meta', { name: 'translate', content: 'no' }],

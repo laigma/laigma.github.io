@@ -26,32 +26,43 @@ hero:
       text: Contact
       link: /contact
 
-features:
-  - icon: <i class="fab fa-vuejs"></i>
-    title: VueJS
-  - icon: <i class="fab fa-node-js"></i>
-    title: NodeJS
-  - icon: <i class="fab fa-aws"></i> 
-    title: AWS Cloud
-  - icon: 
-      dark: /logos/azure-dark.svg
-      light: /logos/azure-light.svg
-    title: Azure
-  - icon: 
-      dark: /logos/postgres-dark.svg
-      light: /logos/postgres-light.svg
-    title: PostgreSQL
-  - icon: 
-      dark: /logos/mongodb-dark.svg
-      light: /logos/mongodb-light.svg
-    title: MongoDB
-  - icon:
-      dark: /logos/vitejs-dark.svg
-      light: /logos/vitejs-light.svg
-    title: ViteJS
-  - icon:
-      dark: /logos/fastapi-dark.svg
-      light: /logos/fastapi-light.svg
-    title: FastApi
+# features:
+  # - icon: <i class="fab fa-vuejs"></i>
+  #   title: VueJS
+  # - icon: <i class="fab fa-node-js"></i>
+  #   title: NodeJS
+  # - icon: <i class="fab fa-aws"></i> 
+  #   title: AWS Cloud
+  # - icon: 
+  #     dark: /logos/azure-dark.svg
+  #     light: /logos/azure-light.svg
+  #   title: Azure
+  # - icon: 
+  #     dark: /logos/postgres-dark.svg
+  #     light: /logos/postgres-light.svg
+  #   title: PostgreSQL
+  # - icon: 
+  #     dark: /logos/mongodb-dark.svg
+  #     light: /logos/mongodb-light.svg
+  #   title: MongoDB
+  # - icon:
+  #     dark: /logos/vitejs-dark.svg
+  #     light: /logos/vitejs-light.svg
+  #   title: ViteJS
+  # - icon:
+  #     dark: /logos/fastapi-dark.svg
+  #     light: /logos/fastapi-light.svg
+  #   title: FastApi
 
 ---
+<CustomHome />
+
+<script>
+import CustomHome from "./views/FeaturesLayout.vue"
+
+export default {
+  components: {
+    CustomHome
+  }
+}
+</script>
