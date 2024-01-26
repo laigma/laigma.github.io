@@ -2,6 +2,7 @@
 <template>
   <div :class="$style.typewriter">
     <h1>Welcome! These are the tools I'm used to work with</h1>
+    <h1>Bienvenido! Estas son mis herramientas de trabajo</h1>
   </div>
 
   <BoxesView :title="title" :renderData="features" />
@@ -72,6 +73,30 @@ export default {
 
   50% {
     border-color: orange
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .typewriter h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .typewriter h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .typewriter h1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typewriter h1 {
+    font-size: 0.6rem;
   }
 }
 </style>
