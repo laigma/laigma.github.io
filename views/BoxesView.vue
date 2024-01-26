@@ -16,7 +16,7 @@ export default {
   name: "boxes-view",
   data() {
     return {
-      isDarkMode: false,
+      isDarkMode: true,
     };
   },
   components: { BoxContent },
@@ -34,11 +34,6 @@ export default {
   methods: {
     checkDarkMode() {
       this.isDarkMode = document.documentElement.classList.contains('dark');
-    }
-  },
-  watch: {
-    isDarkMode(newVal) {
-      console.log("isDarkMode changed:", newVal);
     }
   },
 }
