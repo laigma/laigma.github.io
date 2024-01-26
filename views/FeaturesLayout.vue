@@ -1,31 +1,31 @@
 
 <template>
-  <div :class="$style.typewriter">
-    <h1>Welcome! These are the tools I'm used to work with</h1>
-    <h1>Bienvenido! Estas son mis herramientas de trabajo</h1>
-  </div>
+  <main :class="$style.customContainer">
+    <div :class="$style.divider"></div>
 
-  <BoxesView :title="title" :renderData="features" />
+    <div :class="$style.typewriter">
+      <h1>Welcome! These are the tools I'm used to work with</h1>
+      <h1>Bienvenido! Estas son mis herramientas de trabajo</h1>
+    </div>
+
+    <section v-for="section in contentData" :key="section.title">
+      <div :class="$style.divider"></div>
+
+      <BoxesView :title="section.title" :renderData="section.features" />
+    </section>
+  </main>
 </template>
 
 <script>
+import featuresData from './featuresData';
+
 import BoxesView from './BoxesView.vue';
 
 export default {
   name: "boxes-view",
   data() {
     return {
-      title: "Lenguajes y Frameworks",
-      features: [
-        { icon: '<i class="fab fa-vuejs"></i>', title: 'VueJS' },
-        { icon: '<i class="fab fa-node-js"></i>', title: 'NodeJS' },
-        { icon: '<i class="fab fa-aws"></i>', title: 'AWS Cloud' },
-        { icon: { dark: '/logos/azure-dark.svg', light: '/logos/azure-light.svg' }, title: 'Azure' },
-        { icon: { dark: '/logos/postgres-dark.svg', light: '/logos/postgres-light.svg' }, title: 'PostgreSQL' },
-        { icon: { dark: '/logos/mongodb-dark.svg', light: '/logos/mongodb-light.svg' }, title: 'MongoDB' },
-        { icon: { dark: '/logos/vitejs-dark.svg', light: '/logos/vitejs-light.svg' }, title: 'ViteJS' },
-        { icon: { dark: '/logos/fastapi-dark.svg', light: '/logos/fastapi-light.svg' }, title: 'FastApi' },
-      ]
+      contentData: featuresData.sections(),
     }
   },
   components: { BoxesView }
@@ -33,6 +33,20 @@ export default {
 </script>
 
 <style module>
+.customContainer {
+  padding: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--vp-c-brand);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .typewriter h1 {
   padding-left: 20px;
   max-width: fit-content;

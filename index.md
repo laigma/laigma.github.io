@@ -18,13 +18,13 @@ hero:
     También estoy desarrollando un stack serverless en AWS y Azure. 
     
     Me gustaría mejorar mi carrera contribuyendo a proyectos de código abierto a través de este sitio.
-  actions:
-    - theme: brand
-      text: Projects
-      link: /blog
-    - theme: alt
-      text: Contact
-      link: /contact
+  # actions:
+  #   - theme: alt
+  #     text: Projects
+  #     link: /projects
+  #   - theme: alt
+  #     text: Contact
+  #     link: /contact
 
 # features:
   # - icon: <i class="fab fa-vuejs"></i>

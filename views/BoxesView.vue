@@ -1,9 +1,9 @@
 
 <template>
   <main>
-    <!-- {{ title }} -->
+    <span :class="$style.customFeaturesTitle">{{ title }}</span>
 
-    <section :class="$style.customContainer">
+    <section :class="$style.customFeaturesContainer">
       <BoxContent v-for="feature in renderData" :key="feature.title" :feature="feature" :darkMode="isDarkMode" />
     </section>
   </main>
@@ -40,7 +40,17 @@ export default {
 </script>
 
 <style module>
-.customContainer {
+.customFeaturesTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--vp-c-brand);
+  margin: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+}
+
+.customFeaturesContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
