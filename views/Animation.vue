@@ -33,7 +33,7 @@ export default {
   height: 100vh;
   z-index: 999;
   background-color: black;
-  background-image: url("/img/bg.jpg");
+  background-image: url("/img/wallCode.png");
   background-size: cover;
   background-position: center;
 }
