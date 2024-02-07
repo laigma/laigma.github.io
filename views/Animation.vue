@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.logoOutter">
-    <img :class="$style.logoInner" :src="logo" />
+    <img ref="laigmaLogo" :class="$style.logoInner" :src="logo" @load="fadeInBackground" />
   </div>
 </template>
 
@@ -12,6 +12,11 @@ export default {
       logo: 'logos/lp-dark.png',
     }
   },
+  methods: {
+    fadeInBackground() {
+      this.$refs.laigmaLogo.classList.add(this.$style.fadeIn);
+    }
+  }
 };
 </script>
 
@@ -27,6 +32,7 @@ export default {
   width: 100vw;
   height: 100vh;
   z-index: 999;
+  background-color: black;
   background-image: url("/img/bg.jpg");
   background-size: cover;
   background-position: center;
@@ -34,6 +40,20 @@ export default {
 
 .logoInner {
   animation: zoomOut 3s forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes zoomOut {
