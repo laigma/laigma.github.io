@@ -1,11 +1,10 @@
 
 <template>
   <main :class="$style.customContainer">
-    <div :class="$style.divider"></div>
+    <!-- <div :class="$style.divider"></div> -->
 
     <div :class="$style.typewriter">
       <h1>Welcome! These are the tools I'm used to work with</h1>
-      <h1>Bienvenido! Estas son mis herramientas de trabajo</h1>
     </div>
 
     <section v-for="section in contentData" :key="section.title">
@@ -17,7 +16,8 @@
 </template>
 
 <script>
-import featuresData from './featuresData';
+// import featuresData from './featuresData';
+import features from '../mocks/features.json';
 
 import BoxesView from './BoxesView.vue';
 
@@ -25,7 +25,7 @@ export default {
   name: "boxes-view",
   data() {
     return {
-      contentData: featuresData.sections(),
+      contentData: features// featuresData.sections(),
     }
   },
   components: { BoxesView }
@@ -45,10 +45,12 @@ export default {
   padding-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  opacity: 0.2;
 }
 
 .typewriter h1 {
   padding-left: 20px;
+  margin-top: 60px !important;
   max-width: fit-content;
   color: var(--vp-c-brand);
   overflow: hidden;

@@ -43,6 +43,8 @@ export default {
 .customFeaturesTitle {
   font-size: 1.2rem;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
   color: var(--vp-c-brand);
   margin: 20px;
   margin-left: 80px;
@@ -58,8 +60,15 @@ export default {
   position: relative;
   top: 0;
   margin: 20px;
-  margin-left: 80px;
-  margin-right: 80px;
-  z-index: 99;
+  margin-left: 120px;
+  margin-right: 120px;
+  z-index: 29;
+}
+
+@media (max-width: 1200px) {
+  .customFeaturesContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 </style>

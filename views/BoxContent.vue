@@ -1,39 +1,66 @@
 
 <template>
-  <main :class="$style.customBox">
+  <main :class="$style.customBox" @click="toggleContentCard" @mouseleave="hideContentCard">
     <div :class="$style.iconContainer">
-      <i v-if="typeof feature.icon === 'string'" v-html="feature.icon"></i>
-      <img v-else :class="$style.svgIcon" :src="darkMode ? feature.icon.dark : feature.icon.light" alt="icon" />
+      <i v-if="!isSvgIcon(feature.icon)" :class="$style.svgIconCustom" v-html="feature.icon"></i>
+      <img v-else :class="`svgIcon ${$style.svgIconCustom}`" :src="feature.icon" alt="icon" />
+
+      <BoxDetail v-if="showContentCard" :description="feature.description" />
     </div>
 
-    <span :class="$style.labelContainer">{{ feature.title }}</span>
+    <div :class="$style.labelContainer"> {{ feature.title }}</div>
   </main>
 </template>
 
 <script>
+import BoxDetail from "./BoxDetail.vue";
+
 export default {
   name: "box-content",
+  data() {
+    return {
+      showContentCard: false
+    }
+  },
+  components: { BoxDetail },
   props: {
     feature: Object,
     darkMode: Boolean
   },
+  methods: {
+    isSvgIcon(icon) {
+      if (icon.includes("<i")) {
+        return false;
+      }
+      return true;
+    },
+    toggleContentCard() {
+      if (!this.feature.description) return;
+
+      this.showContentCard = !this.showContentCard;
+    },
+    hideContentCard() {
+      this.showContentCard = false;
+    }
+  }
 }
 </script>
 
 <style module>
 .iconContainer {
-  width: 20%;
+  width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 
 .labelContainer {
-  width: 80%;
+  width: 100%;
   font-weight: bold;
-  margin: 12px;
+  font-size: 0.8rem;
+  /* margin: 12px; */
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -44,6 +71,7 @@ export default {
   padding: 12px;
   border-radius: 20px;
   display: flex;
+  flex-direction: column;
   background-color: var(--vp-c-brand-soft);
 }
 
@@ -73,12 +101,12 @@ export default {
 
 .customBox:hover {
   background-color: var(--vp-c-brand-3);
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: background-color 0.5s, transform 0.5s;
 }
 
-.svgIcon {
-  width: 20px;
-  height: 20px;
+.svgIconCustom {
+  height: 90px;
+  font-size: 90px;
 }
 </style>

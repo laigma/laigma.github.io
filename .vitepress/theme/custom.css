@@ -14,12 +14,6 @@
   box-shadow: 0 7px 14px 0 rgba(50, 50, 93, .1), 0 3px 6px 0 rgba(0, 0, 0, .07) !important;
 }
 
-.VPHero {
-  margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
-}
-
-/* override default color palette */
 :root {
   --vp-c-white: #ffffff;
   --vp-c-black: #000000;
@@ -69,7 +63,7 @@
   --vp-c-neutral: var(--vp-c-white);
   --vp-c-neutral-inverse: var(--vp-c-black);
 
-  --vp-c-bg: #051402;
+  --vp-c-bg: #050705;
   --vp-c-bg-alt: #1e1e2a;
   --vp-c-bg-elv: #14182e;
   --vp-c-bg-soft: #56565b;
@@ -103,4 +97,34 @@
   --vp-c-red-2: #f14158;
   --vp-c-red-3: #b62a3c;
   --vp-c-red-soft: rgba(244, 63, 94, 0.16);
+}
+
+.dark .svgIcon {
+  filter: invert(1);
+}
+
+
+.dialog {
+  display: block;
+  position: absolute;
+  width: inherit;
+  max-width: 100%;
+  font-size: 12px;
+  line-height: 1.2;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.dark .dialog {
+  filter: invert(1);
 }

@@ -1,54 +1,50 @@
-const programmingLanguages = [
+const languages = [
   { title: "JavaScript", icon: '<i class="fab fa-js"></i>' },
-  { title: "TypeScript", icon: '<i class="fab fa-js"></i>' },
+  { title: "TypeScript", icon: '/logos/ts.svg' },
   { title: "Python", icon: '<i class="fab fa-python"></i>' },
-  { title: "SQL", icon: '<i class="fas fa-database"></i>' },
   { title: "HTML5", icon: '<i class="fab fa-html5"></i>' },
   { title: "CSS3", icon: '<i class="fab fa-css3-alt"></i>' },
-  { title: "GraphQL", icon: '<i class="fab fa-js"></i>' },
+  { title: "GraphQL", icon: '/logos/graphql.svg' },
   { title: "C", icon: '<i class="fab fa-cuttlefish"></i>' },
   { title: "Visual Basic .NET", icon: '<i class="fab fa-windows"></i>' },
-];
-
-const cliTools = [
-  { title: "AWS CLI", icon: '<i class="fas fa-terminal"></i>' },
-  { title: "Azure CLI", icon: '<i class="fas fa-terminal"></i>' },
-  { title: "Docker CLI", icon: '<i class="fas fa-terminal"></i>' },
-  { title: "Ubuntu CLI", icon: '<i class="fas fa-terminal"></i>' },
+  { title: "PostgreSQL", icon: '/logos/postgres.svg' },
+  { title: "MongoDB", icon: '/logos/mongodb.svg' },
+  { title: "DynamoDB", icon: '/logos/dynamodb.svg' },
 ];
 
 const frameworks = [
   { title: "VueJS", icon: '<i class="fab fa-vuejs"></i>' },
-  { title: "ViteJS", icon: { dark: '/logos/vitejs-dark.svg', light: '/logos/vitejs-light.svg' } },
-  { title: "FastApi", icon: { dark: '/logos/fastapi-dark.svg', light: '/logos/fastapi-light.svg' } },
+  { title: "ViteJS", icon: '/logos/vitejs.svg' },
+  { title: "FastApi", icon: '/logos/fastapi.svg' },
   { title: "NodeJS", icon: '<i class="fab fa-node-js"></i>' },
-  { title: "ExpressJS", icon: '<i class="fab fa-node-js"></i>' },
-  { title: "NestJS", icon: '<i class="fab fa-node-js"></i>' },
-  { title: "GraphQL Yoga", icon: '<i class="fab fa-node-js"></i>' },
+  { title: "ExpressJS", icon: '/logos/express.svg' },
+  { title: "GraphQL Yoga", icon: '/logos/graphql.svg' },
   { title: "Apollo GraphQL", icon: '<i class="fab fa-node-js"></i>' },
-];
-
-const databases = [
-  { title: "VueJS", icon: '<i class="fab fa-vuejs"></i>' },
-  { title: "NodeJS", icon: '<i class="fab fa-node-js"></i>' },
+  { title: "Serverless", icon: '/logos/serverless.svg' },
+  { title: "AWS CDK", icon: '/logos/lambda.svg' },
+  { title: "Azure Cloud", icon: '/logos/azure.svg' },
   { title: "AWS Cloud", icon: '<i class="fab fa-aws"></i>' },
-  { title: "Azure", icon: { dark: '/logos/azure-dark.svg', light: '/logos/azure-light.svg' } },
-  { title: "PostgreSQL", icon: { dark: '/logos/postgres-dark.svg', light: '/logos/postgres-light.svg' } },
-  { title: "MongoDB", icon: { dark: '/logos/mongodb-dark.svg', light: '/logos/mongodb-light.svg' } },
-  { title: "ViteJS", icon: { dark: '/logos/vitejs-dark.svg', light: '/logos/vitejs-light.svg' } },
-  { title: "FastApi", icon: { dark: '/logos/fastapi-dark.svg', light: '/logos/fastapi-light.svg' } },
 ];
 
-// Puedes usar estos arrays en tu componente Vue y renderizar con v-for según necesites.
-
+const devops = [
+  { title: "Docker", icon: '<i class="fab fa-docker"></i>' },
+  { title: "Jenkins", icon: '<i class="fab fa-jenkins"></i>' },
+  { title: "GitHub Actions", icon: '<i class="fab fa-github"></i>' },
+  { title: "GitLab CI", icon: '<i class="fab fa-gitlab"></i>' },
+  { title: "Gitflow", icon: '<i class="fab fa-git-alt"></i>' },
+  { title: "Test Driven Development", icon: '<i class="fas fa-vial"></i>' },
+  { title: "Agile", icon: '<i class="fas fa-infinity"></i>' },
+  { title: "Jira", icon: '<i class="fab fa-jira"></i>' },
+  { title: "Jest", icon: '<i class="fab fa-js"></i>' },
+  { title: "Cypress", icon: '/logos/cypress.svg' }
+]
 
 export default {
   sections() {
     return [
-      { title: "Programming Languages", features: programmingLanguages },
-      { title: "Command Line Interfaces", features: cliTools },
-      { title: "Frameworks", features: frameworks },
-      { title: "Databases", features: databases },
+      { title: "Languages & Databases", features: languages },
+      { title: "Frameworks & Tools", features: frameworks },
+      { title: "DevOps", features: devops },
     ]
   }
 }

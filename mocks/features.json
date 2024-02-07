@@ -1,0 +1,209 @@
+[
+  {
+    "title": "Languages & Databases",
+    "features": [
+      {
+        "title": "JavaScript",
+        "icon": "<i class=\"fab fa-js\"></i>",
+        "description": "I've been working with JavaScript for over 3 years, over many projects and frameworks.",
+        "level": "Expert"
+      },
+      {
+        "title": "TypeScript",
+        "icon": "/logos/ts.png",
+        "description": "Recently, I adopted TypeScript as my main language for all my project, since it fits better for team work and large projects, and test driven development.",
+        "level": "Advanced"
+      },
+      {
+        "title": "Python",
+        "icon": "<i class=\"fab fa-python\"></i>",
+        "description": "For some projects where it's a better fit, I use Python. I have some experience with Django and FastApi.",
+        "level": "Mid"
+      },
+      {
+        "title": "HTML5",
+        "icon": "<i class=\"fab fa-html5\"></i>",
+        "level": "Expert",
+        "description": "Since I have memory I've been working with HTML, and I'm always up to date with the latest features and best practices."
+      },
+      {
+        "title": "CSS3",
+        "icon": "<i class=\"fab fa-css3-alt\"></i>",
+        "level": "Expert",
+        "description": "As you see in this page, I'm very comfortable with CSS, and I'm always tying new tricks to improve the UX."
+      },
+      {
+        "title": "GraphQL",
+        "icon": "/logos/graphql.svg",
+        "level": "Expert",
+        "description": "I've introduced this tech in my current company, and I think it's suitable for large amounts of payload as well."
+      },
+      {
+        "title": "C",
+        "icon": "<i class=\"fab fa-cuttlefish\"></i>",
+        "level": "Expert",
+        "description": "Most of my academic projects were done in C, and I'm very comfortable with it."
+      },
+      {
+        "title": "Visual Basic .NET",
+        "icon": "<i class=\"fab fa-windows\"></i>",
+        "level": "Expert",
+        "description": "I've worked on it in the past, and maintained some legacy projects."
+      },
+      {
+        "title": "PostgreSQL",
+        "icon": "/logos/postgres.svg",
+        "level": "Expert",
+        "description": "My choice for relational databases, I've been working with it for over 3 years."
+      },
+      {
+        "title": "MongoDB",
+        "icon": "/logos/mongodb.svg",
+        "level": "Expert",
+        "description": "I've been working with MongoDB for over 3 years, and I think it's a great fit for some projects."
+      },
+      {
+        "title": "DynamoDB",
+        "icon": "/logos/dynamodb.svg",
+        "level": "Expert",
+        "description": "Best solution for serverless applications, I've been working with it for over 3 years."
+      }
+    ]
+  },
+  {
+    "title": "Frameworks & Tools",
+    "features": [
+      {
+        "title": "VueJS",
+        "icon": "<i class=\"fab fa-vuejs\"></i>",
+        "level": "Expert",
+        "description": "I've been developing on VueJS for several projects, mostly for industrial and logistic purposes."
+      },
+      {
+        "title": "ViteJS",
+        "icon": "/logos/vitejs.svg",
+        "level": "Expert",
+        "description": "I started using webpack, but since I discovered ViteJS, I've been using it for all my projects, React & VueJS."
+      },
+      {
+        "title": "FastApi",
+        "icon": "/logos/fastapi.svg",
+        "level": "Expert",
+        "description": "Fastest solution for python REST APIs, fast learning curve and great performance."
+      },
+      {
+        "title": "NodeJS",
+        "icon": "<i class=\"fab fa-node-js\"></i>",
+        "level": "Expert",
+        "description": "Core for all backend development on JS stack, I've been working with it for over 3 years."
+      },
+      {
+        "title": "ExpressJS",
+        "icon": "/logos/express.svg",
+        "level": "Expert",
+        "description": "I use this framework for backend, also Graphql as REST APIs. Great docs and community."
+      },
+      {
+        "title": "GraphQL Yoga",
+        "icon": "/logos/graphql.svg",
+        "level": "Expert",
+        "description": "I've been using this frameworks since I like minimalistic solutions, and it's great for small projects."
+      },
+      {
+        "title": "Apollo GraphQL",
+        "icon": "<i class=\"fab fa-node-js\"></i>",
+        "level": "Expert",
+        "description": "As Apollo has a bigger community and more features, I use it for larger projects."
+      },
+      {
+        "title": "Serverless",
+        "icon": "/logos/serverless.svg",
+        "level": "Expert",
+        "description": "My first approach to cloud-based applications, I've been using it with AWS."
+      },
+      {
+        "title": "AWS CDK",
+        "icon": "/logos/lambda.svg",
+        "level": "Expert",
+        "description": "For my experience, the best way for a developer profile to work with AWS. I've been using it for over 2 years."
+      },
+      {
+        "title": "Azure Cloud",
+        "icon": "/logos/azure.svg",
+        "level": "Expert",
+        "description": "Right now, I'm starting to work and grow in Azure, to Azure Functions and CosmoDB."
+      },
+      {
+        "title": "AWS Cloud",
+        "icon": "<i class=\"fab fa-aws\"></i>",
+        "level": "Expert",
+        "description": "I've used many services in AWS, from EC2 to Cognito, Cloudwatch logs, and many others."
+      }
+    ]
+  },
+  {
+    "title": "DevOps",
+    "features": [
+      {
+        "title": "Docker",
+        "icon": "<i class=\"fab fa-docker\"></i>",
+        "level": "Expert",
+        "description": "Daily management of containers, I've been using it for over 3 years."
+      },
+      {
+        "title": "Jenkins",
+        "icon": "<i class=\"fab fa-jenkins\"></i>",
+        "level": "Expert",
+        "description": "As advanced user, I've been setting up pipelines and jobs for over 3 years."
+      },
+      {
+        "title": "GitHub Actions",
+        "icon": "<i class=\"fab fa-github\"></i>",
+        "level": "Expert",
+        "description": "I mainly use gitlab, but I've done some things in GitHub Actions, and I think it's a great tool."
+      },
+      {
+        "title": "GitLab CI",
+        "icon": "<i class=\"fab fa-gitlab\"></i>",
+        "level": "Expert",
+        "description": "Excellent solution for CI/CD, I've been using it for over 3 years."
+      },
+      {
+        "title": "Gitflow",
+        "icon": "<i class=\"fab fa-git-alt\"></i>",
+        "level": "Expert",
+        "description": "My favourite workflow, I'm really comfortable with it and I think it's the best for team work."
+      },
+      {
+        "title": "Test Driven Development",
+        "icon": "<i class=\"fas fa-vial\"></i>",
+        "level": "Expert",
+        "description": "Since I prefer to work with TypeScript, I've been using TDD for over 2 years."
+      },
+      {
+        "title": "Agile",
+        "icon": "<i class=\"fas fa-infinity\"></i>",
+        "level": "Expert",
+        "description": "I work in an agile environment, and I'm comfortable with Scrum and Kanban."
+      },
+      {
+        "title": "Jira",
+        "icon": "<i class=\"fab fa-jira\"></i>",
+        "level": "Expert",
+        "description": "As a Scrum Master, I've been using Jira for over 3 years."
+      },
+      {
+        "title": "Jest",
+        "icon": "<i class=\"fab fa-js\"></i>",
+        "level": "Expert",
+        "description": "Again, the main piece for TDD, I've been using it for over 2 years."
+      },
+      {
+        "title": "Cypress",
+        "icon": "/logos/cypress.svg",
+        "level": "Expert",
+        "description": "I love this for front testing, I'm trying to adopt it for all my projects."
+      }
+    ]
+  }
+]

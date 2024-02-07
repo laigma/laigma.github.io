@@ -5,6 +5,8 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './custom.css'
 
+import Animation from '../../views/Animation.vue'
+
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -14,5 +16,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    app.component('Animation', Animation)
   }
 } satisfies Theme
