@@ -5,7 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './custom.css'
 
-import Animation from '../../views/Animation.vue'
+import Animation from '../../components/Animation.vue'
 
 export default {
   extends: DefaultTheme,

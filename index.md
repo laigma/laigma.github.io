@@ -12,26 +12,25 @@ hero:
     
     I'd like to enhance my career by contributing to open-source projects through this site.
     
-  # actions:
-  #   - theme: alt
-  #     text: Projects
-  #     link: /projects
-  #   - theme: alt
-  #     text: Contact
-  #     link: /contact
+  actions:
+    - theme: alt
+      text: Projects
+      link: /projects
+    - theme: alt
+      text: Contact
+      link: /contact
 
 ---
 <Animation />
-<CustomHome />
+
+<FeaturesLayout />
 
 <script>
-// import Animation from "./views/Animation.vue"
-import CustomHome from "./views/FeaturesLayout.vue"
+import FeaturesLayout from "./components/Features/FeaturesLayout.vue"
 
 export default {
   components: {
-    // Animation,
-    CustomHome
+    FeaturesLayout
   }
 }
 </script>

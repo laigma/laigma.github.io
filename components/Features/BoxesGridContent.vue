@@ -5,7 +5,7 @@
       <i v-if="!isSvgIcon(feature.icon)" :class="$style.svgIconCustom" v-html="feature.icon"></i>
       <img v-else :class="`svgIcon ${$style.svgIconCustom}`" :src="feature.icon" alt="icon" />
 
-      <BoxDetail v-if="showContentCard" :description="feature.description" />
+      <BoxDetail v-if="showContentCard" :description="feature.description" :level="feature.level" />
     </div>
 
     <div :class="$style.labelContainer"> {{ feature.title }}</div>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import BoxDetail from "./BoxDetail.vue";
+import BoxDetail from "./BoxesGridContentDetail.vue";
 
 export default {
   name: "box-content",
@@ -25,7 +25,6 @@ export default {
   components: { BoxDetail },
   props: {
     feature: Object,
-    darkMode: Boolean
   },
   methods: {
     isSvgIcon(icon) {
@@ -70,9 +69,11 @@ export default {
   margin: 12px;
   padding: 12px;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   background-color: var(--vp-c-brand-soft);
+  overflow: hidden;
+  transition: background-color 0.5s, transform 0.5s
 }
 
 @media screen and (max-width: 1366px) {
@@ -102,7 +103,6 @@ export default {
 .customBox:hover {
   background-color: var(--vp-c-brand-3);
   transform: scale(1.2);
-  transition: background-color 0.5s, transform 0.5s;
 }
 
 .svgIconCustom {

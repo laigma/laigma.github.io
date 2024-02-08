@@ -1,8 +1,6 @@
 
 <template>
   <main :class="$style.customContainer">
-    <!-- <div :class="$style.divider"></div> -->
-
     <div :class="$style.typewriter">
       <h1>Welcome! These are the tools I'm used to work with</h1>
     </div>
@@ -16,16 +14,15 @@
 </template>
 
 <script>
-// import featuresData from './featuresData';
-import features from '../mocks/features.json';
+import features from '../../mocks/features.json';
 
-import BoxesView from './BoxesView.vue';
+import BoxesView from './BoxesGrid.vue';
 
 export default {
   name: "boxes-view",
   data() {
     return {
-      contentData: features// featuresData.sections(),
+      contentData: features,
     }
   },
   components: { BoxesView }
@@ -54,21 +51,15 @@ export default {
   max-width: fit-content;
   color: var(--vp-c-brand);
   overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange;
-  /* The typwriter cursor */
   white-space: nowrap;
-  /* Keeps the content on a single line */
   margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
   letter-spacing: .12em;
-  /* Adjust as needed */
   animation:
     typing 15.5s steps(630, end),
     blink-caret .5s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0
@@ -79,7 +70,6 @@ export default {
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
 
   from,
