@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "@laigma"
   text: "Luis Iglesias · FullStack Developer"
-  image: "/img/profile.png"
+  image: "/img/prof.jpg"
   tagline: >
     Hi, I'm Luis Iglesias. I'm a full-stack developer based in Seville, Spain, experienced in VueJS and NodeJS frameworks. 
     

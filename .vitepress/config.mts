@@ -18,6 +18,12 @@ export default defineConfig({
       "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-GY8NDR4Y28');"
     ],
 
+    // Open Graph
+    ['meta', { property: 'og:title', content: 'Luis Iglesias - FullStack Developer' }],
+    ['meta', { property: 'og:description', content: `@laigma's Portfolio/Blog, where I share my projects and experience.` }],
+    ['meta', { property: 'og:image', content: '/logos/lp-dark.png' }],
+    ['meta', { property: 'og:url', content: 'https://laigma.github.io' }],
+
     // Meta tags
     ['meta', { name: 'translate', content: 'no' }],
     ['link', { rel: 'icon', href: '/logos/lp-dark.png' }],
