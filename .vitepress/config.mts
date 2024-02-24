@@ -21,7 +21,7 @@ export default defineConfig({
     // Open Graph
     ['meta', { property: 'og:title', content: 'Luis Iglesias - FullStack Developer' }],
     ['meta', { property: 'og:description', content: `@laigma's Portfolio/Blog, where I share my projects and experience.` }],
-    ['meta', { property: 'og:image', content: '/logos/lp-dark.png' }],
+    ['meta', { property: 'og:image', content: 'https://laigma.github.io/logos/lp-portfolio-og.webp' }],
     ['meta', { property: 'og:url', content: 'https://laigma.github.io' }],
 
     // Meta tags
