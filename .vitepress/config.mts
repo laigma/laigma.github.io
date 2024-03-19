@@ -66,5 +66,5 @@ export default defineConfig({
         link: 'https://gitlab.com/laigma-public'
       }
     ]
-  }
+  },
 })

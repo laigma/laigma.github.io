@@ -5,7 +5,10 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './custom.css'
 
-import Animation from '../../components/Animation.vue'
+// Importacion componentes global
+import AppAnimation from '../../src/components/AppAnimation.vue'
+import AppToggle from '../../src/components/AppToggle.vue'
+
 
 export default {
   extends: DefaultTheme,
@@ -15,7 +18,8 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
-    app.component('Animation', Animation)
+    // Componentes globales
+    app.component('AppAnimation', AppAnimation)
+    app.component('AppToggle', AppToggle)
   }
 } satisfies Theme

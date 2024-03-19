@@ -26,7 +26,7 @@ hero:
 <FeaturesLayout />
 
 <script>
-import FeaturesLayout from "./components/Features/FeaturesLayout.vue"
+import FeaturesLayout from "./src/views/Features/FeaturesLayout.vue"
 
 export default {
   components: {

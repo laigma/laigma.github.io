@@ -1,4 +1,3 @@
-
 <template>
   <main :class="$style.customContainer">
     <div :class="$style.typewriter">
@@ -14,7 +13,7 @@
 </template>
 
 <script>
-import features from '../../mocks/features.json';
+import features from '../../data/features.json';
 
 import BoxesView from './BoxesGrid.vue';
 
