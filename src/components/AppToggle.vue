@@ -1,7 +1,7 @@
 <template>
-  <div class="toggle">
-    <button v-for="(option, index) in options" :key="index" :class="{ active: option === selectedOption }"
-      @click="selectOption(option)">
+  <div class="toggle av">
+    <button v-for="(option, index) in options" :key="index" :class="{ active: option === options[inputVal] }"
+      @click="inputVal = index">
       {{ option }}
     </button>
   </div>
@@ -10,31 +10,26 @@
 <script>
 export default {
   props: {
+    modelValue: {
+      type: Number,
+      default: 0
+    },
     options: {
       type: Array,
       required: true
     },
-    value: {
-      type: [String, Number],
-      required: true
-    }
+
   },
-  data() {
-    return {
-      selectedOption: this.value
-    };
+  computed: {
+    inputVal: {
+      get() {
+        return this.modelValue;
+      },
+      set(value) {
+        this.$emit("update:modelValue", value);
+      }
+    },
   },
-  watch: {
-    value(newValue) {
-      this.selectedOption = newValue;
-    }
-  },
-  methods: {
-    selectOption(option) {
-      this.selectedOption = option;
-      this.$emit('input', option);
-    }
-  }
 };
 </script>
 
@@ -44,6 +39,11 @@ export default {
   justify-content: center;
 }
 
+/* .toggle.av {
+  position: absolute;
+  flex-direction: column;
+} */
+
 .toggle button {
   border: none;
   background-color: transparent;
@@ -51,6 +51,10 @@ export default {
   padding: 8px 16px;
   margin: 0 4px;
   font-size: 16px;
+}
+
+.toggle button:hover {
+  background-color: var(--vp-c-brand);
 }
 
 .toggle button.active {

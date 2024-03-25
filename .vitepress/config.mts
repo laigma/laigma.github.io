@@ -41,6 +41,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'About me', link: '/profile' },
       { text: 'Projects', link: '/projects' },
       { text: 'Contact', link: '/contact' }
     ],
@@ -49,6 +50,7 @@ export default defineConfig({
       {
         text: 'Menu',
         items: [
+          { text: 'About me', link: '/profile' },
           { text: 'Projects', link: '/projects' },
           { text: 'Contact', link: '/contact' }
         ]
@@ -67,4 +69,6 @@ export default defineConfig({
       }
     ]
   },
+
+  srcDir: "src"
 })

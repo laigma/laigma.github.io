@@ -1,5 +1,6 @@
 <template>
-  <div>
+<main>Pintar bonita BIO</main>
+  <!-- <div>
     <div class="hero">
       <h1>{{ hero.name }}</h1>
       <p>{{ hero.text }}</p>
@@ -9,7 +10,7 @@
         <router-link v-for="(action, index) in hero.actions" :key="index" :to="action.link" class="action" :class="{ 'alt': action.theme === 'alt' }">{{ action.text }}</router-link>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
