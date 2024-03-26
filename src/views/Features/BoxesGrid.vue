@@ -1,4 +1,3 @@
-
 <template>
   <main>
     <span :class="$style.customFeaturesTitle">{{ title }}</span>
@@ -24,15 +23,15 @@ export default {
 
 <style module>
 .customFeaturesTitle {
-  font-size: 1.2rem;
+  font-size: calc(var(--font-size) * 1.2);
   font-weight: 700;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   color: var(--vp-c-brand);
   margin: 20px;
-  margin-left: 80px;
-  margin-right: 80px;
-  text-align: center;
+  /* margin-left: 80px;
+  margin-right: 80px; */
+  justify-content: center;
 }
 
 .customFeaturesContainer {

@@ -2,47 +2,54 @@
 layout: home
 ---
 
-<!-- Barra de navegación de home -->
-<AppToggle v-model="selectedTab" :options="toggleOptions"/>
+<BoxesGrid class="vpHomeWrap" v-if="selectedFeature" :title="selectedFeature" :renderData="content" />
 
-<!-- <Bio v-if="selectedTab === 0"/> -->
-<BoxesGrid v-if="selectedFeature" :title="selectedFeature.title" :renderData="selectedFeature.features" />
+<section class="customFooter">
+  <AppTab v-model="selectedFeature" :options="toggleOptions" />
+</section>
 
 <script>
 import features from './data/features.json';
 
 import BoxesGrid from "./views/Features/BoxesGrid.vue"
-import Bio from "./views/Bio.md"
 
 export default {
   data() {
     return {
-      selectedTab: 0,
-      selectedFeature: null,
-      toggleOptions: [
-        // "Bio",
-        ...features.map(e => e.title)
-      ]
+      selectedFeature: "",
+      toggleOptions: [ ...features.map(e => e.title)],
+      content: []
     }
   },
   components: {
-    Bio,
     BoxesGrid
   },
   mounted() {
-    console.log(this.toggleOptions)
-    this.selectedFeature = features[this.selectedTab];
+    this.selectedFeature = features[0].title;
   },
   watch: {
-    selectedTab() {
-      console.log(this.selectedTab)
-
-
-      this.selectedFeature = null;    
-      
-      // if (this.selectedTab === 0) return;
-      this.selectedFeature = features[this.selectedTab];
+    selectedFeature() {
+      console.log(this.selectedFeature);
+      this.content = features.find(e => e.title === this.selectedFeature).features;
     }
   }
 }
 </script>
+
+<style scoped>
+  .vpHomeWrap {
+    height: calc(100vh - 64px - 50px);
+    overflow-y: auto;
+  }
+
+  .customFooter {
+    width: 100vw;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--vp-c-bg);
+    z-index: 999;
+  }
+</style>

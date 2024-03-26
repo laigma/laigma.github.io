@@ -22,22 +22,18 @@ export default {
 
 <style scoped>
 .app-link-button-container {
-  margin: 2px;
-  padding: 2px;
-  background-color: var(--color-primary);
-  border-radius: 5px;
-  border: 0px;
-  box-shadow: 0px 0px 5px 0px var(--color-secondary);
-  width: fit-content;
   height: 100%;
   max-height: 100%;
-  overflow: hidden;
   min-height: 36px;
-  padding: 2px;
-  color: white;
+  margin: 1%;
+  padding: 1%;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px var(--color-secondary);
+  display: flex;
   align-items: center;
   align-content: center;
-  display: flex;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -48,7 +44,10 @@ export default {
 }
 
 .app-link-button-label {
-  margin: 0px 10px;
-  padding: 5px;
+  margin: calc(var(--font-size) * 0.2);
+  padding: calc(var(--font-size) * 0.2);
+  color: var(--vp-c-text-dark);
+  font-size: calc(var(--font-size) * 0.9);
+  font-weight: 500;
 }
 </style>

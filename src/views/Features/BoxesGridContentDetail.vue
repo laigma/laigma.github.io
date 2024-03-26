@@ -1,12 +1,8 @@
-
 <template>
   <main class="dialog">
     <div :class="$style.descriptionBox">
       {{ description }}
     </div>
-
-    <!-- <div :class="$style.levelBox" :style="{ width: progressWidth }"> -->
-    <!-- </div> -->
 
     <div :class="$style.levelWrapper">
       <div :class="$style.levelLabel">Skills</div>
@@ -61,7 +57,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8em;
+  font-size: calc(var(--font-size) * 0.8);
   color: black;
 }
 

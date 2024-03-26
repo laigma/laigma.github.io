@@ -1,0 +1,33 @@
+:root {
+  --font-size: calc(var(--base-font-size) * 0.6);
+}
+
+@media (min-width: 410px) {
+  :root {
+    --font-size: calc(var(--base-font-size) * 0.7);
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    --font-size: calc(var(--base-font-size) * 0.8);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-size: calc(var(--base-font-size) * 0.9);
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-size: calc(var(--base-font-size) * 0.95);
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size: calc(var(--base-font-size) * 1);
+  }
+}

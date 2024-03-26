@@ -34,25 +34,25 @@ export default {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: var(--vp-home-hero-name-color);
-  font-size: 56px;
+  font-size: calc(var(--font-size) * 3.5);
   font-weight: 700;
-  height: 100px;
+  height: calc(var(--font-size) * 5);
   display: flex;
   align-items: center;
 }
 
 .cardSubtitle {
-  font-size: 1.2em;
+  font-size: calc(var(--font-size) * 1.2);
   letter-spacing: -0.4px;
   font-weight: bold;
   color: var(--vp-c-text-1);
 }
 
 .cardContent {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   line-height: 1.2;
-  font-size: 0.9rem;
+  font-size: calc(var(--font-size) * 0.9);
   color: var(--vp-c-text-2);
 }
 </style>

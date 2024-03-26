@@ -1,5 +1,5 @@
 <template>
-  <div class="toggle av">
+  <div class="toggle">
     <button v-for="(option, index) in options" :key="index" :class="{ active: option === options[inputVal] }"
       @click="inputVal = index">
       {{ option }}
@@ -39,6 +39,10 @@ export default {
   justify-content: center;
 }
 
+.toggle.je {
+  justify-content: flex-end;
+}
+
 /* .toggle.av {
   position: absolute;
   flex-direction: column;
@@ -50,11 +54,15 @@ export default {
   cursor: pointer;
   padding: 8px 16px;
   margin: 0 4px;
-  font-size: 16px;
+  font-size: calc(var(--font-size) * 0.9);
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .toggle button:hover {
-  background-color: var(--vp-c-brand);
+  background-color: var(--vp-c-brand-soft);
 }
 
 .toggle button.active {

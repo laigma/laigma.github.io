@@ -1,4 +1,3 @@
-
 <template>
   <main :class="$style.customBox" @click="toggleContentCard" @mouseleave="hideContentCard">
     <div :class="$style.iconContainer">
@@ -56,7 +55,7 @@ export default {
 .labelContainer {
   width: 100%;
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: calc(var(--font-size) * 0.8);
   /* margin: 12px; */
   display: flex;
   justify-content: center;
@@ -64,7 +63,7 @@ export default {
 }
 
 .customBox {
-  width: calc((100% / 5) - 24px);
+  width: calc((100% / 4) - 24px);
   box-sizing: border-box;
   margin: 12px;
   padding: 12px;
@@ -88,16 +87,22 @@ export default {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .customBox {
-    width: calc(100% / 2);
+    width: calc(100% / 4);
   }
 }
 
 @media screen and (max-width: 480px) {
   .customBox {
-    width: 100%;
+    width: calc(100% / 3);
+    /* scale: 0.8; */
+    /* margin: 2px; */
   }
+
+  /* .svgIconCustom {
+    scale: 0.8;
+  } */
 }
 
 .customBox:hover {
@@ -106,7 +111,7 @@ export default {
 }
 
 .svgIconCustom {
-  height: 90px;
-  font-size: 90px;
+  height: calc(var(--font-size) * 5);
+  font-size: calc(var(--font-size) * 5);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <main class="row ac">
-    <section class="col cols-4 xl-3 md-4">
+  <main class="row se">
+    <section class="col cols-10 xl-3 md-4">
       <AppCard>
         <template #cardTitle>
           @laigma
@@ -27,7 +27,7 @@
       </AppCard>
     </section>
 
-    <section class="col cols-4">
+    <section class="col cols-10 md-4">
       <AppAvatar src="/img/prof.jpg" alt="Luis Iglesias" size="350px" />
     </section>
   </main>

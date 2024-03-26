@@ -21,7 +21,7 @@ layout: home
 #       link: /contact
 
 ---
-<!-- <AppAnimation /> -->
+<AppAnimation />
 
 <!-- <FeaturesLayout /> -->
 <Home class="vpHomeWrap"/>
