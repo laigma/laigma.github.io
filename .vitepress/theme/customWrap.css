@@ -1,5 +1,5 @@
 /* Wrap Home Default Theme */
-.VPContent {
+.VPContent .is-home {
   margin: 0;
   padding: 0;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.VPHome {
+.VPContent .is-home .VPHome {
   width: 100vw;
   height: calc(100vh - 64px);
   margin: 0 !important;
@@ -18,4 +18,23 @@
 .VPHero {
   width: 100%;
   height: 100% !important;
+}
+
+.vpHomeWrap {
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 99;
+}
+
+.Layout .is-home {
+  background-image: url("/img/texture-wall-light.png") !important;
+  background-size: cover;
+}
+
+.dark .Layout .is-home {
+  background-image: url("/img/texture-wall-dark.png") !important;
+  background-size: cover;
 }

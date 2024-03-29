@@ -21,15 +21,9 @@ export default {
   computed: {
     inputVal: {
       get() {
-        console.log("getter", this.modelValue)
         return this.modelValue
       },
       set(value) {
-        console.log("🚀 ~ set ~ value:", value);
-        // if (!value) {
-        //   this.$emit('update:modelValue', this.options[0]);
-        //   return;
-        // }
         this.$emit('update:modelValue', value)
       }
     },

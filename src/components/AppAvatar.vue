@@ -26,9 +26,15 @@ export default {
 
 <style scoped>
 .app-avatar {
+  margin: 10%;
   width: 100%;
   height: 100%;
+  max-height: min(70vh, 70vw);
+  max-width: min(70vh, 70vw);
   object-fit: cover;
   border-radius: 20%;
+  -webkit-box-shadow: 2px 6px 62px -13px var(--color-secondary);
+  -moz-box-shadow: 2px 6px 62px -13px var(--color-secondary);
+  box-shadow: 2px 6px 62px -13px var(--color-secondary);
 }
 </style>

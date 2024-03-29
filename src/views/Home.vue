@@ -1,6 +1,6 @@
 <template>
   <main class="row se">
-    <section class="col cols-10 xl-3 md-4">
+    <section class="col cols-10 md-6 lg-4">
       <AppCard>
         <template #cardTitle>
           @laigma
@@ -20,21 +20,26 @@
         </template>
 
         <template #actions>
-          <AppLinkButton label="Skills" link="/profile.html" />
-          <AppLinkButton label="Contact" link="/contact.html" />
-          <AppLinkButton label="Projects" link="/projects.html" />
+          <AppLinkButton v-for="path in paths" :key="path.text" :label="path.text" :link="`${path.link}.html`" />
         </template>
       </AppCard>
     </section>
 
-    <section class="col cols-10 md-4">
+    <section class="col cols-10 md-4 sm-8">
       <AppAvatar src="/img/prof.jpg" alt="Luis Iglesias" size="350px" />
     </section>
   </main>
 </template>
 
 <script lang="ts">
+import { paths } from "../data/paths";
+
 export default {
   name: "Home",
+  data() {
+    return {
+      paths,
+    };
+  },
 };
 </script>

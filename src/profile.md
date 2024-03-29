@@ -29,7 +29,6 @@ export default {
   },
   watch: {
     selectedFeature() {
-      console.log(this.selectedFeature);
       this.content = features.find(e => e.title === this.selectedFeature).features;
     }
   }
@@ -49,7 +48,10 @@ export default {
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: var(--vp-c-bg);
+    /* background-color: var(--vp-c-bg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 999;
   }
 </style>

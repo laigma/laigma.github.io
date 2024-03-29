@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+import { paths } from '../src/data/paths'
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "laigma",
@@ -41,9 +43,7 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About me', link: '/profile' },
-      { text: 'Projects', link: '/projects' },
-      { text: 'Contact', link: '/contact' }
+      ...paths
     ],
 
     sidebar: [
@@ -70,5 +70,5 @@ export default defineConfig({
     ]
   },
 
-  srcDir: "src"
+  srcDir: "src",
 })
